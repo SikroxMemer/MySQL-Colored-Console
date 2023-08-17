@@ -22,8 +22,7 @@ Before running the MySQL Python Console, make sure you have the following requir
 You can install these requirements using the following commands:
 
 ```bash
-pip install mysql-connector
-pip install rich
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -41,8 +40,8 @@ cd MySQL-Python-Console
 python mysql_python_console.py
 ```
 
-4. You will be prompted to enter your MySQL database credentials (host, username, password, database name).
-5. Once connected, you can start entering your SQL queries and interacting with the database.
+4. Change **config.py** and enter your MySQL database credentials (host, username, password, database name).
+5. Once connected, you can start entering your SQL queries and interacting with the database at **main.py**.
 
 ## Commands
 
@@ -54,7 +53,8 @@ The MySQL Python Console supports a set of commands for various operations:
 - `DELETE`: Execute DELETE queries to remove data.
 - `SHOW TABLES`: Display a list of tables in the database.
 - `DESCRIBE <table_name>`: Display the schema of a specific table.
-- `EXIT` or `QUIT`: Exit the MySQL Python Console.
+- `EXIT` : Exit the MySQL Python Console.
+- `--CLEAR` : To clear off console.
 
 ## Contributions
 

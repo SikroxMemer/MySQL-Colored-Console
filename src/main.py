@@ -21,6 +21,9 @@ while True:
 
     if query_state == "--clear":
         os.system('cls' if os.name == 'nt' else 'clear')
+    elif query_state == "EXIT":
+        current.print("[yellow]Bye ^^ ![/]")
+        exit()
     else:
         try:
 
