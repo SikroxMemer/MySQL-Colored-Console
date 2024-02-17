@@ -19,6 +19,7 @@ class Connection(MySQLConnection):
             super().__init__(**self.__SQL_INFO)
         except Error as error:
             self._CONSOLE.print("[red]{}[/]".format(error))
+            exit()
 
 
 class MySQLColoredConsole():
