@@ -47,7 +47,7 @@ class MySQLColoredConsole():
                 else:
                     try:
 
-                        self.cursor = self._CLIENT.cursor(dictionary=True)
+                        self.cursor = self._CONNECTION.cursor(dictionary=True)
                         self.cursor.execute(self.sql)
                         self._CONSOLE.log(f"<success> [green]{self.sql}[/]")
                         result: list[dict] = self.cursor.fetchall()
